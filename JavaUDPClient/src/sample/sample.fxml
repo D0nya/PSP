@@ -1,0 +1,27 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TextArea?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="sample.Controller"
+          prefHeight="600.0" prefWidth="600.0" hgap="10" vgap="10"
+          styleClass="root">
+    <padding><Insets top="25" right="25" left="25" bottom="25"/></padding>
+
+    <Button text="Send" prefWidth="70" onAction="#Send" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+    <Label text="Sending data" GridPane.columnIndex="1" GridPane.rowIndex="2" GridPane.columnSpan="2"/>
+
+    <Label text="a" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+    <TextField maxWidth="40"  fx:id="a" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Label text="b" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+    <TextField maxWidth="40" fx:id="b" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+    <Label text="c" GridPane.columnIndex="3" GridPane.rowIndex="3"/>
+    <TextField maxWidth="40" fx:id="c" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+
+    <Label text="Result" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+    <TextArea fx:id="result" maxWidth="400" maxHeight="200" GridPane.rowIndex="7" GridPane.columnIndex="0" GridPane.columnSpan="6"/>
+</GridPane>
