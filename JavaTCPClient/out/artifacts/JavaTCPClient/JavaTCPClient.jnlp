@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaTCPClient.jnlp">
+  <information>
+    <title>Client</title>
+    <vendor>Unknown</vendor>
+    <description>JavaTCPClient</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaTCPClient.jar" size="4872" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="600" height="400" main-class="Client.Models.Client"  name="JavaTCPClient" />
+  <update check="background"/>
+</jnlp>
